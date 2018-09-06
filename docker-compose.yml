@@ -1,0 +1,8 @@
+meinweb:
+  image: web
+  volumes:
+    - /var/www/html:/var/www/html
+php:
+  image: php
+  volumes_from:
+    - meinweb
