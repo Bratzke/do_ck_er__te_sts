@@ -4,8 +4,10 @@
 # docker run --name my_image_name --restart=always -p 80:80 -p 443:443 -d first_try
 
 
+ARG distro=stretch
 
-FROM resin/rpi-raspbian:stretch
+FROM resin/rpi-raspbian:$distro
+
 MAINTAINER Bratzke
 
 
